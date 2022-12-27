@@ -1,0 +1,15 @@
+const sceneWidth = 960;
+const sceneHeight = 600;
+const paddleWidth = 96;
+const paddleHeight = 16;
+const ballSize = 24;
+const brickWidth = 64;
+const brickHeight = 24;
+const wallLines = 2;
+const maxWallLines = 8;
+const pointsByBrick = 10;
+const lives = 5;
+const defaultBallSpeed = 10;
+const startBallSpeed = -2;
+const ballSpeedUp = 0.9; // lower to increase the ball speeding up
+const maxBallSpeed = 1;

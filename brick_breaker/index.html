@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/model/Sprite.js"></script>
+    <script src="scripts/model/Paddle.js"></script>
+    <script src="scripts/view/View.js"></script>
+    <script src="scripts/ctrl/PaddleCtrl.js"></script>
+    <script src="scripts/model/ConstUtil.js"></script>
+    <script src="scripts/model/Ball.js"></script>
+    <script src="scripts/model/Position.js"></script>
+    <script src="scripts/model/Dimension.js"></script>
+    <script src="scripts/model/Movement.js"></script>
+    <script src="scripts/ctrl/BallCtrl.js"></script>
+    <script src="scripts/model/Game.js"></script>
+    <script src="scripts/ctrl/GameCtrl.js"></script>
+    <script src="scripts/model/Brick.js"></script>
+    <script src="scripts/model/Player.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let game = new Game();
+            let view = new View();
+            let gameCtrl = new GameCtrl(game, view);
+            gameCtrl.play();
+        });
+    </script>
+    <title>54915 - Project 2</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="title">
+            <header>
+                <h1>
+                    <div id="overtitle">Casse Brique !</div>
+                    <div id="undertitle">WEBG2 - 54915 - Ouamar Yahya</div>
+                </h1>
+            </header>
+        </div>
+        <div class="gameinfos">
+            <span id="levels"></span>
+            <span id="score">0</span>
+        </div>
+        <div id="gameholder">
+            <span id="message"></span>
+            <span id="othermessage"></span>
+            <span id="gameover"></span>
+            <span id="scoregame"></span>
+            <span id="restartgame"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

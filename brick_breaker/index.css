@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+html,body{
+height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 1.7fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". title title ." ". gameinfos gameinfos ." ". gameholder gameholder ." ". gameholder gameholder ." ". gameholder gameholder ." ". . . .";
+}
+  
+/* Title's part */
+.title { 
+    grid-area: title; 
+    width: 30.5em;
+    border-radius: 0.5em;
+    padding-left: 15em;
+    padding-right: 15em;
+    background-color: #2369b8;
+    color: white;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    margin-bottom: 1.5em;
+}
+
+#overtitle{
+    font-size: 2em;
+    padding-top: 0.3em;
+}
+
+#undertitle{
+    padding-bottom: 0.5em;
+}
+
+/* Game infos's part */
+.gameinfos { 
+    grid-area: gameinfos; 
+    width: 960px;
+}
+
+#score{
+    font-family: 'Source Code Pro', monospace;
+    color: #2369b8;
+    position: absolute;
+    font-size: 2em;
+    margin-left: 29.5em;
+}
+
+.hearts{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#levels{
+    font-family: 'Source Code Pro', monospace;
+    color: #2369b8;
+    position: absolute;
+    font-size: 2em;
+    margin-left: 12.5em;
+}
+
+#scoregame{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    color: #2167b9;
+    font-size: 2.5em;
+    margin-top: 300px;
+    margin-left: 275px;
+}
+  
+/* Game's part */
+#gameholder {
+    display: grid;
+    cursor: url('https://i.ibb.co/PxYXxkK/cursor.png'),auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.1fr 0.1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . ." "paddleholder paddleholder paddleholder";
+    grid-area: gameholder;
+    height: 600px;
+    width: 960px;
+    border-style: solid;
+    border-color: #2369b8;
+    border-width: 5px;
+    margin-top: -1.5em;
+}
+
+#racket{
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+    height: 16px;
+    width: 96px;
+    margin-left: 245px;
+    margin-top: 584px;
+    background-color: #5494de;
+}
+
+#ball{
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-color: #5494de;
+    border-radius: 50px;
+    border-color: black;
+    margin-top: 560px;
+    margin-bottom: -12px;
+    margin-left: 300px;
+}
+
+.Brick{
+    display: block;
+    position: absolute;
+    background-color: #5494de;
+    height: 24px;
+    width: 64px;
+    border: 0.5px solid #2167b9;
+}
+
+#message{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    color: #2167b9;
+    font-size: 2.5em;
+    margin-top: 300px;
+    margin-left: 300px;
+}
+
+#othermessage{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    color: #2167b9;
+    font-size: 2.5em;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+#gameover{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    color: #2167b9;
+    font-size: 2.5em;
+    margin-left: 350px;
+    margin-top: 35px;
+}
+
+#restartgame{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    color: #2167b9;
+    font-size: 2.5em;
+    margin-top: 350px;
+    margin-left: 100px;
+}
